@@ -20,10 +20,13 @@ Berikut adalah panduan singkat untuk menjalankan proyek ini secara lokal:
    ```bash
    git clone https://github.com/muhibbans/dkv-web.git
 3. Pindah ke direktori proyek.
+   ```bash
    cd dkv-website
-4. Install dependensi.
+5. Install dependensi.
+   ```bash
    npm install
-5. Jalankan proyek secara lokal.
+7. Jalankan proyek secara lokal.
+   ```bash
    npm start
 
 Kontribusi
