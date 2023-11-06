@@ -1,4 +1,3 @@
-# dkv-web
 # Website Desain Komunikasi Visual UI UX Travest
 
 Selamat datang di repositori pengembangan website untuk Desain Komunikasi Visual dari Universitas Pendidikan Indonesia (UPI). Proyek ini dikelola oleh Tim UI UX Travest.
@@ -34,7 +33,8 @@ Kami menyambut kontribusi dari komunitas. Jika Anda ingin berkontribusi pada pen
 
 ## Kontak
 Jika Anda memiliki pertanyaan atau saran, silakan hubungi kami di email 
-mailto:fauzan.aztera@upi.edu
+[![Hubungi Kami](path/to/image.png)](mailto:fauzan.aztera@gmail.com)
+
 
 Terima kasih atas kontribusi dan dukungan Anda!
 
