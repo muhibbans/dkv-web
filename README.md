@@ -29,11 +29,12 @@ Berikut adalah panduan singkat untuk menjalankan proyek ini secara lokal:
    ```bash
    npm start
 
-Kontribusi
+## Kontribusi
 Kami menyambut kontribusi dari komunitas. Jika Anda ingin berkontribusi pada pengembangan proyek ini, silakan buat pull request dan kami akan memeriksa serta mengintegrasikannya.
 
-Kontak
-Jika Anda memiliki pertanyaan atau saran, silakan hubungi kami di email fauzan.aztera@upi.edu
+## Kontak
+Jika Anda memiliki pertanyaan atau saran, silakan hubungi kami di email 
+mailto:fauzan.aztera@upi.edu
 
 Terima kasih atas kontribusi dan dukungan Anda!
 
