@@ -35,11 +35,16 @@ h6{
 /* Navigation */
 
 nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5vw 8vw;
+    padding: 0.5vw 2%;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -75,11 +80,22 @@ nav a{
 }
 
 .user:hover{
-    background-color: aqua;
+    background-color: #121619;
+    color:#FF9F00 ;
+    transition: 0.2s ease;
 }
 
 nav img{
     cursor: pointer;
+}
+
+#menu-btn{
+    display: none;
+
+}
+
+#menu-close{
+    display: none;
 }
 
 nav .navigation ul{
@@ -149,6 +165,7 @@ nav .navigation ul li a{
     color: white;
     font-size: 2.2rem;
     letter-spacing: 1px;
+    margin-bottom: 15px;
 }
 
 #home p{
@@ -176,7 +193,7 @@ nav .navigation ul li a{
 
 /* About */
 
-#about{
+/* #about{
     padding: 80px 0 40px;
     color: white;
 }
@@ -207,25 +224,106 @@ nav .navigation ul li a{
     border-radius: 10px;
 }
 
+.sub-title a:hover{
+    background-color: #121619;
+    color:#FF9F00 ;
+    transition: 0.2s ease;
+}
+
+.sub-title .about-text{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    line-height: 25px;
+} */
+
+#about {
+    padding: 70px 5% 10px; /* Mengurangi padding untuk tampilan responsif */
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-direction: row; /* Mengubah orientasi menjadi kolom pada layar kecil */
+    width: 100%;
+    padding: 0 5%; /* Mengurangi padding untuk tampilan responsif */
+    align-items: center;
+    justify-content: center;
+}
+
+.about-col-1 {
+    margin-right: 5vh;
+}
+
+.about-col-1 img {
+    width: 500px; /* Gambar akan mengisi lebar kolom */
+    max-width: 100%; /* Gambar tidak akan melebihi ukuran aslinya */
+    height: auto; /* Gambar akan mengikuti aspek rasio aslinya */
+    border-radius: 30px; /* Menyesuaikan border-radius */
+    margin-right: 2vh;
+    margin-bottom: 20px; /* Memberi jarak antara gambar dan teks */
+}
+
+.sub-title {
+    max-width: 50%; /* Maksimum lebar teks adalah lebar kolom */
+    margin-left: 5px;
+    align-items: center;
+}
+
+.sub-title h1, .sub-title p{
+    text-align: justify;
+}
+
+
+.sub-title a {
+    text-decoration: none;
+    display: inline-block; /* Membuat link menjadi elemen blok */
+    margin-top: 0px; /* Memberi jarak antara teks dan tombol */
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #FF9F00;
+    font-weight: 500;
+    border-radius: 10px;
+    color: #121619;
+}
+
+.sub-title a:hover{
+    background-color: #121619;
+    color:#FF9F00 ;
+    transition: 0.2s ease;
+}
+
 .sub-title .about-text{
     margin-top: 15px;
     margin-bottom: 30px;
     line-height: 25px;
 }
 
-
 /* Features */
 
 #features{
-    padding: 1vw 8vw 0 8vw;
+    padding: 2vh 8vh;
     text-align: center;
+}
+
+#features h1{
+    margin-bottom: 15px;
 }
 
 #features .feat-sub-title{
     margin-top: 10px;
-    margin-bottom: 5vh;
-    padding: 0 35vh;
+    margin-bottom: 10vh;
+    padding: 0 5vh;
     line-height: 2.5vh;
+    margin: 0 35vh;
+}
+
+.fea-base{
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+.fea-box{
+    max-width: 92%;
 }
 
 .fea-box a{
@@ -252,6 +350,10 @@ nav .navigation ul li a{
     margin-bottom: 15px;
 }
 
+.fea-desc{
+    text-align: justify;
+}
+
 .fea-box .fea-desc{
     margin-bottom: 30px;
 }
@@ -264,7 +366,7 @@ nav .navigation ul li a{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
     grid-gap: 1rem;
-    padding: 0.5vw 0.5vw;
+    padding: 0.5vw 1.5vw;
 }
 
 #features .fea-box{
@@ -503,14 +605,22 @@ nav .navigation ul li a{
 /* Footer Section */
 
 #Footer{
-    padding: 80px 17vh 1900px;
+    padding: 40px 17vh 200px;
     background: #1a242f;
 }
 
-.footer-border{
-    border-top: 2px white solid;
-    margin-bottom: 50px;
+.headline-foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 5vh;
+    border-bottom:  1px solid white ;
+    margin-bottom: 40px;
+}
 
+.headline-foot h1{
+    color: #fff;
+    font-size: 25px;
 }
 
 .footer-container{
@@ -541,11 +651,175 @@ nav .navigation ul li a{
 }
 
 .copyright-socmed{
+    background-color: #1a242f;
     display: flex;
     justify-content: space-between;
-    padding: 50px 12vh;
+    padding: 50px 10vh;
+    border-top: 1px solid white;
 }
 
-.icons i{
+.copyright-socmed p{
+    color: white;
+}
+.container-cr {
+    padding: 0 17vh;
+    background-color: #1a242f;
+}
 
+@media (max-width: 769px) {
+    nav {
+        padding: 15px 20px;
+
+    }
+    nav img {
+    }
+    #menu-btn{
+        display: initial;
+    }
+    #menu-close{
+        display: initial;
+        padding: 30px 0 20px 20px;
+    }
+
+    nav .navigation ul{
+        position: absolute;
+        top: 0;
+        right: -220px;
+        width: 220px; background-color: #fff;
+        height: 100vh;
+        background: rgba(17, 20, 104, 0.45);
+        backdrop-filter: blur(4.5px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 1px;
+        transition: 0.3s ease;
+    }
+
+    nav .navigation ul.active{
+        right: 0;
+    }
+
+    nav .navigation ul li{
+        padding: 20px 0 20px 40px;
+        margin-left: 0;
+    }
+
+    nav .navigation ul li a{
+        color: #fff;
+    }
+
+    nav .register{
+        display: none;
+    }
+    nav .user {
+        display: none;
+    }
+
+    #home{
+        padding-top: 0px;
+    }
+
+    #home h1 {
+        color: white;
+        font-size: 1.9rem;
+        letter-spacing: 1px;
+        font-weight: 700;
+        text-align: center;
+        padding: 0 5px;
+    }
+
+    #home p{
+        width: 90%;
+    }
+
+    /* About */
+
+    #about{
+        padding: 70px 5% 5px;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0 5%;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 25px;
+        font-weight: 700;
+        color: #121619;
+        text-align: center;
+    }
+
+    .sub-title{
+        max-width: 100%;
+    }
+    
+    .sub-title .about-text {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        line-height: 25px;
+        text-align: justify;
+    }
+
+    .about-col-1{
+        margin: 0;
+    }
+
+    .about-col-1 img{
+        margin-right: 5vh;
+    }
+
+    /* Features */
+
+    #features{
+        padding: 0 20px;
+        text-align: justify;
+    }
+
+    .fea-base{
+        width: 100%;
+    }
+    
+    #features .feat-sub-title{
+        padding: 15px 3px;
+        line-height: 3.5vh;
+        margin: 0 15px;
+    }
+    
+    .fea-box img{
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .fea-box{
+        width: 100%;
+        margin-bottom: 5vh;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fea-desc{
+        text-align: justify;
+    }
+
+    #features .fea-base{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+        grid-gap: 1.5rem;
+        padding: 0.5vw 1.5vw;
+    }
+
+    #features .fea-box{
+        background-color: #f9f9ff;
+        text-align: start;
+        padding: 0.5vw 0.5vw;
+    }
 }
